@@ -20,7 +20,7 @@ function ProductList() {
       });
       data.products.forEach((product) => {
         idbPromise('products', 'put', product);
-      })
+      });
     }
   }, [data, loading, dispatch]);
 
